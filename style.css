@@ -7,6 +7,7 @@
 body {
     background-color: antiquewhite;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -215,10 +216,8 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 4px;
+    padding: 10px;
     margin-top: 40px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
