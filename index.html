@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- TELA INICIAL -->
+        <div class="screen active" id="start-screen">
+            <div class="start-title">
+                <h1>Quiz Time!</h1>
+            </div>
+            <div class="start-text">
+                <p>Teste o seu conhecimento com perguntas legais!</p>
+            </div>
+            <button id="start-btn">Começar o Quiz</button>
+        </div>
+
+        <!-- TELA DE CATEGORIAS -->
+        <div class="screen" id="category-screen">
+            <div class="category-header">
+                <h2>Selecione a categoria desejada:</h2>
+            </div>
+            <div class="categoria-container">
+                <button class="category-btn category-geografia" data-categoria="geografia">Geografia</button>
+                <button class="category-btn category-historia" data-categoria="historia">História</button>
+                <button class="category-btn category-matematica" data-categoria="matematica">Matemática</button>
+                <button class="category-btn category-quimica" data-categoria="quimica">Química</button>
+                <button class="category-btn category-tecnologia" data-categoria="tecnologia">Tecnologia</button>
+                <button class="category-btn category-cultura" data-categoria="cultura">Cultura Geral</button>
+            </div>
+        </div>
+
+        <!-- TELA DO QUIZ -->
+        <div class="screen" id="quiz-screen">
+            <div class="question-title">
+                <h2 id="question-text">Questão</h2>
+            </div>
+            <div class="quiz-info">
+                <p>
+                    Questão <span id="current-question">1</span> de <span id="total-question">5</span>
+                </p>
+                <p>
+                    Pontuação <span id="score">0</span>
+                </p>
+            </div>
+            <div class="answers-container">
+                <!-- Os botões serão adicionados mais tarde através do JS -->
+            </div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <div class="screen" id="result-screen">
+            <div class="result-header">
+                <h1>Resultado do Quiz</h1>
+            </div>
+            <div class="result-info">
+                <p class="result-text">
+                    Você pontuou <span id="result-score">1</span> de <span id="max-score">5</span>
+                </p>
+                <p id="result-message">
+                    Mensagem do resultado
+                </p>
+            </div>
+            <button id="restart-btn">Reiniciar o Quiz</button>
+        </div>
+
+    </div>
+    
+    <footer>
+        <p>Copyright 2026. Direitos autorais reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

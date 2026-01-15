@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.screen {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* TELA INICIAL - START SCREEN */
+
+.start-title {
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.start-text {
+    color: rgb(90, 90, 90);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+button {
+    border-radius: 25px;
+    border: none;
+    font-size: 1.1rem;
+    background-color: orange;
+    padding: 10px 15px;
+    transition: background-color 0.5s ease;
+    color: aliceblue;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 166, 0, 0.849);
+}
+
+/* TELA DAS CATEGORIAS - CATEGORY SCREEN */
+
+.category-header {
+    padding: 25px;
+    color: #333;
+}
+
+.category-btn {
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.category-geografia {
+    background-image: url('https://images.unsplash.com/photo-1604351888999-9ea0a2851e61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2VvZ3JhcGh5fGVufDB8fDB8fHww');
+}
+
+.category-quimica {
+    background-image: url('https://plus.unsplash.com/premium_photo-1693225746473-fbc063bffe41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHlkcm9nZW58ZW58MHx8MHx8fDA%3D/quimica.jpg');
+}
+
+.category-historia {
+    background-image: url('https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhpc3Rvcnl8ZW58MHx8MHx8fDA%3D/historia.jpg');
+}
+
+.category-matematica {
+    background-image:  url('https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWF0aGVtYXRpY3N8ZW58MHx8MHx8fDA%3D');
+}
+
+.category-tecnologia {
+    background-image:  url('https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHRtbHxlbnwwfHwwfHx8MA%3D%3D');
+}
+
+.category-cultura {
+    background-image:  url('https://images.unsplash.com/photo-1616530940355-351fabd9524b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmlsbWVzfGVufDB8fDB8fHww');
+}
+
+
+#category-btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.747);
+    border: 2px solid rgba(0, 0, 255, 0.644);
+}
+
+/* TELA DAS QUESTÕES - QUIZ SCREEN */
+
+.question-title {
+    margin-bottom: 2rem;
+}
+
+#question-text {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    color: #665;
+    margin-bottom: 10px;
+}
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.answers-btn {
+    background-color: #f8f0e5;
+    border-radius: 10px;
+    text-align: left;
+    border: 2px solid #eadbc8;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.answers-btn:hover {
+    background-color: #eadbc8;
+    border-color: #dac0ae;
+}
+
+.answers-btn.correct {
+    background-color: #e6fff0;
+    border-color: #a3f0c4;
+    color: #28a745;
+}
+
+.answers-btn.incorrect {
+    background-color: #fff0f0;
+    border: #ffa1a1;
+    color: #ff8787;
+}
+
+.progress-bar {
+    height: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: #f8f0e5;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: orange;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* TELA DE RESULTADOS - RESULT SCREEN */
+
+.result-header {
+    color: orange;
+    margin-bottom: 2rem;
+}
+
+.result-info {
+    background-color: #eadbc8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.result-text {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+#result-message {
+    font-size: 1.4rem;
+    color: orange;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
