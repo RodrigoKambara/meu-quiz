@@ -227,3 +227,167 @@ footer p {
     font-size: 0.9rem;
 }
 
+/* RESPONSIVIDADE PARA MOBILE */
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .screen {
+        padding: 1.5rem;
+    }
+
+    /* Tela inicial */
+    .start-title {
+        font-size: 1.5rem;
+    }
+
+    .start-text {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Categorias */
+    .category-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .categoria-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .category-btn {
+        width: 100%;
+        max-width: 300px;
+        height: 80px;
+        font-size: 1rem;
+    }
+
+    /* Quiz */
+    #question-text {
+        font-size: 1.2rem;
+    }
+
+    .quiz-info {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .answers-container {
+        margin: 15px 0;
+        gap: 8px;
+    }
+
+    .answers-btn {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+    }
+
+    /* Resultados */
+    .result-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .result-text {
+        font-size: 1rem;
+    }
+
+    #result-message {
+        font-size: 1.1rem;
+    }
+
+    /* Footer */
+    footer {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .screen {
+        padding: 1rem;
+    }
+
+    .start-title {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .start-text {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    .category-header {
+        padding: 15px;
+    }
+
+    .category-header h2 {
+        font-size: 1.1rem;
+    }
+
+    .category-btn {
+        height: 70px;
+        font-size: 0.9rem;
+    }
+
+    #question-text {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .quiz-info {
+        font-size: 0.85rem;
+    }
+
+    .answers-btn {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .result-header h1 {
+        font-size: 1.3rem;
+    }
+
+    .result-info {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .result-text {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+
+    #result-message {
+        font-size: 1rem;
+    }
+}
+
