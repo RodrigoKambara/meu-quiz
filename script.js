@@ -255,8 +255,8 @@ const questoesDeGeografia = [
     {
         questao: "Qual é o país mais populoso do mundo?",
         respostas: [
-            { texto: "China", correct: true },
-            { texto: "Índia", correct: false },
+            { texto: "China", correct: false },
+            { texto: "Índia", correct: true },
             { texto: "Estados Unidos", correct: false },
             { texto: "Brasil", correct: false }
         ],
@@ -284,7 +284,7 @@ const questoesDeGeografia = [
         respostas: [
             { texto: "Turquia", correct: true },
             { texto: "Egito", correct: false },
-            { texto: "Rússia", correct: false },
+            { texto: "Cazaquistão", correct: false },
             { texto: "Grécia", correct: false }
         ],
     },
@@ -914,13 +914,353 @@ const questoesDeTecnologia = [
     }
 ];
 
+const todasAsQuestoes = [
+  // ================= QUÍMICA =================
+  {
+    questao: "Em uma reação hipotética A ⇌ B, observa-se que aumentar a pressão desloca o equilíbrio para a direita. Isso implica necessariamente que:",
+    respostas: [
+      {texto: "O número de mols de B é menor que o de A", correct: true},
+      {texto: "A reação direta é exotérmica", correct: false},
+      {texto: "A constante de equilíbrio aumenta", correct: false},
+      {texto: "A entropia do sistema aumenta", correct: false}
+    ]
+  },
+  {
+    questao: "Qual das seguintes espécies possui maior caráter nucleofílico em solvente aprótico polar?",
+    respostas: [
+      {texto: "F⁻", correct: false},
+      {texto: "Cl⁻", correct: false},
+      {texto: "Br⁻", correct: true},
+      {texto: "I⁻", correct: false}
+    ]
+  },
+  {
+    questao: "Em uma pilha galvânica, se o potencial padrão da reação é positivo, isso indica que:",
+    respostas: [
+      {texto: "A reação é espontânea nas condições padrão", correct: true},
+      {texto: "A reação sempre ocorre rapidamente", correct: false},
+      {texto: "A energia livre de Gibbs é positiva", correct: false},
+      {texto: "O cátodo perde elétrons", correct: false}
+    ]
+  },
+  {
+    questao: "Qual dos seguintes fatores estabiliza mais um carbocátion terciário?",
+    respostas: [
+      {texto: "Efeito indutivo doador de elétrons", correct: true},
+      {texto: "Hibridização sp", correct: false},
+      {texto: "Solvente apolar", correct: false},
+      {texto: "Ligação covalente dupla", correct: false}
+    ]
+  },
+  {
+    questao: "A equação de Arrhenius relaciona a constante de velocidade com:",
+    respostas: [
+      {texto: "Energia de ativação e temperatura", correct: true},
+      {texto: "Entalpia e entropia", correct: false},
+      {texto: "Concentração dos reagentes", correct: false},
+      {texto: "Pressão do sistema", correct: false}
+    ]
+  },
+  {
+    questao: "Em um tampão formado por ácido fraco HA e sua base conjugada A⁻, o pH será mais estável quando:",
+    respostas: [
+      {texto: "As concentrações de HA e A⁻ forem semelhantes", correct: true},
+      {texto: "HA estiver em excesso", correct: false},
+      {texto: "A⁻ estiver em excesso", correct: false},
+      {texto: "O meio for altamente básico", correct: false}
+    ]
+  },
+
+  // ================= FÍSICA =================
+  {
+    questao: "Em um sistema isolado, a energia mecânica pode não ser conservada porque:",
+    respostas: [
+      {texto: "Parte da energia pode se transformar em calor", correct: true},
+      {texto: "A força gravitacional desaparece", correct: false},
+      {texto: "A velocidade média é sempre constante", correct: false},
+      {texto: "A entropia diminui", correct: false}
+    ]
+  },
+  {
+    questao: "No movimento harmônico simples, a aceleração é:",
+    respostas: [
+      {texto: "Proporcional e oposta ao deslocamento", correct: true},
+      {texto: "Constante", correct: false},
+      {texto: "Sempre zero no ponto de equilíbrio", correct: false},
+      {texto: "Proporcional à velocidade", correct: false}
+    ]
+  },
+  {
+    questao: "Segundo a relatividade especial, a dilatação temporal ocorre porque:",
+    respostas: [
+      {texto: "A velocidade da luz é constante para todos os observadores", correct: true},
+      {texto: "O tempo é absoluto", correct: false},
+      {texto: "A massa diminui com a velocidade", correct: false},
+      {texto: "A energia não se conserva", correct: false}
+    ]
+  },
+  {
+    questao: "Em um circuito RLC em ressonância, ocorre que:",
+    respostas: [
+      {texto: "A impedância é mínima", correct: true},
+      {texto: "A corrente é zero", correct: false},
+      {texto: "A tensão é infinita", correct: false},
+      {texto: "A resistência é desprezível", correct: false}
+    ]
+  },
+  {
+    questao: "Na mecânica quântica, o princípio da incerteza de Heisenberg afirma que:",
+    respostas: [
+      {texto: "Não é possível conhecer simultaneamente posição e momento com precisão arbitrária", correct: true},
+      {texto: "A posição do elétron é fixa", correct: false},
+      {texto: "A energia não é quantizada", correct: false},
+      {texto: "A velocidade da luz pode ser ultrapassada", correct: false}
+    ]
+  },
+  {
+    questao: "Em um referencial inercial, a primeira lei de Newton afirma que:",
+    respostas: [
+      {texto: "Um corpo permanece em repouso ou em movimento retilíneo uniforme se nenhuma força atuar sobre ele", correct: true},
+      {texto: "Toda ação tem uma reação maior", correct: false},
+      {texto: "A força é sempre proporcional à velocidade", correct: false},
+      {texto: "A energia cinética é constante", correct: false}
+    ]
+  },
+
+  // ================= HISTÓRIA =================
+  {
+    questao: "O conceito de 'mais-valia', central no pensamento de Karl Marx, refere-se a:",
+    respostas: [
+      {texto: "A diferença entre o valor produzido pelo trabalhador e o salário recebido", correct: true},
+      {texto: "O lucro obtido exclusivamente pelo comércio", correct: false},
+      {texto: "O imposto pago ao Estado", correct: false},
+      {texto: "A renda proveniente da terra", correct: false}
+    ]
+  },
+  {
+    questao: "A Paz de Westfália (1648) é considerada um marco porque:",
+    respostas: [
+      {texto: "Estabeleceu o princípio da soberania dos Estados modernos", correct: true},
+      {texto: "Criou a ONU", correct: false},
+      {texto: "Iniciou a Revolução Industrial", correct: false},
+      {texto: "Acabou com o feudalismo", correct: false}
+    ]
+  },
+  {
+    questao: "O imperialismo europeu do século XIX foi motivado principalmente por:",
+    respostas: [
+      {texto: "Busca por matérias-primas e novos mercados consumidores", correct: true},
+      {texto: "Interesse exclusivo em religião", correct: false},
+      {texto: "Altruísmo humanitário", correct: false},
+      {texto: "Fim do capitalismo", correct: false}
+    ]
+  },
+  {
+    questao: "A Guerra Fria foi caracterizada principalmente por:",
+    respostas: [
+      {texto: "Conflitos indiretos entre EUA e URSS", correct: true},
+      {texto: "Guerra nuclear direta", correct: false},
+      {texto: "Colapso imediato do capitalismo", correct: false},
+      {texto: "Fim dos Estados nacionais", correct: false}
+    ]
+  },
+  {
+    questao: "O Iluminismo defendia principalmente:",
+    respostas: [
+      {texto: "Razão, ciência e liberdade individual", correct: true},
+      {texto: "Poder absoluto do rei", correct: false},
+      {texto: "Domínio total da Igreja", correct: false},
+      {texto: "Isolamento das nações", correct: false}
+    ]
+  },
+  {
+    questao: "A Revolução Francesa foi impulsionada por:",
+    respostas: [
+      {texto: "Crise econômica e desigualdade social", correct: true},
+      {texto: "Excesso de prosperidade", correct: false},
+      {texto: "Harmonia entre classes sociais", correct: false},
+      {texto: "Expansão colonial pacífica", correct: false}
+    ]
+  },
+
+  // ================= GEOGRAFIA =================
+  {
+    questao: "O fenômeno El Niño é causado principalmente por:",
+    respostas: [
+      {texto: "Aquecimento anômalo das águas do Pacífico Equatorial", correct: true},
+      {texto: "Resfriamento global dos oceanos", correct: false},
+      {texto: "Derretimento das calotas polares", correct: false},
+      {texto: "Aumento da camada de ozônio", correct: false}
+    ]
+  },
+  {
+    questao: "A formação da Cordilheira dos Andes está relacionada a:",
+    respostas: [
+      {texto: "Colisão entre placas tectônicas", correct: true},
+      {texto: "Atividade vulcânica isolada", correct: false},
+      {texto: "Impacto de meteoros", correct: false},
+      {texto: "Derretimento de geleiras", correct: false}
+    ]
+  },
+  {
+    questao: "O Aquífero Guarani é fundamental principalmente por ser:",
+    respostas: [
+      {texto: "Uma grande reserva de água doce subterrânea", correct: true},
+      {texto: "Uma fonte de energia elétrica", correct: false},
+      {texto: "Uma área de extração de petróleo", correct: false},
+      {texto: "Uma zona de turismo espacial", correct: false}
+    ]
+  },
+  {
+    questao: "A urbanização acelerada nos países em desenvolvimento tende a gerar:",
+    respostas: [
+      {texto: "Favelização e problemas de infraestrutura", correct: true},
+      {texto: "Redução automática da desigualdade", correct: false},
+      {texto: "Eliminação do desemprego", correct: false},
+      {texto: "Desaparecimento das áreas rurais", correct: false}
+    ]
+  },
+  {
+    questao: "O desmatamento da Amazônia está fortemente ligado a:",
+    respostas: [
+      {texto: "Expansão agrícola e pecuária", correct: true},
+      {texto: "Turismo excessivo", correct: false},
+      {texto: "Mineração espacial", correct: false},
+      {texto: "Urbanização total", correct: false}
+    ]
+  },
+  {
+    questao: "O conceito de globalização refere-se principalmente a:",
+    respostas: [
+      {texto: "Integração econômica, cultural e tecnológica entre países", correct: true},
+      {texto: "Isolamento das nações", correct: false},
+      {texto: "Fim do comércio internacional", correct: false},
+      {texto: "Retorno ao feudalismo", correct: false}
+    ]
+  },
+
+  // ================= MATEMÁTICA =================
+  {
+    questao: "Qual é a derivada de f(x) = x³ + 2x² - 5x?",
+    respostas: [
+      {texto: "3x² + 4x - 5", correct: true},
+      {texto: "x² + 2x - 5", correct: false},
+      {texto: "3x + 4", correct: false},
+      {texto: "x³ + 2x²", correct: false}
+    ]
+  },
+  {
+    questao: "O valor de ∫₀² x dx é:",
+    respostas: [
+      {texto: "2", correct: true},
+      {texto: "1", correct: false},
+      {texto: "4", correct: false},
+      {texto: "0", correct: false}
+    ]
+  },
+  {
+    questao: "O limite lim (x→0) (sen x)/x é:",
+    respostas: [
+      {texto: "1", correct: true},
+      {texto: "0", correct: false},
+      {texto: "∞", correct: false},
+      {texto: "-1", correct: false}
+    ]
+  },
+  {
+    questao: "A soma dos ângulos internos de um polígono de n lados é:",
+    respostas: [
+      {texto: "(n - 2) × 180°", correct: true},
+      {texto: "n × 180°", correct: false},
+      {texto: "n × 90°", correct: false},
+      {texto: "360°", correct: false}
+    ]
+  },
+  {
+    questao: "Qual é a solução da equação x² - 9 = 0?",
+    respostas: [
+      {texto: "x = ±3", correct: true},
+      {texto: "x = 3", correct: false},
+      {texto: "x = 0", correct: false},
+      {texto: "x = ±9", correct: false}
+    ]
+  },
+  {
+    questao: "A probabilidade de sair cara ao lançar uma moeda honesta é:",
+    respostas: [
+      {texto: "0,5", correct: true},
+      {texto: "1", correct: false},
+      {texto: "0", correct: false},
+      {texto: "0,25", correct: false}
+    ]
+  },
+
+  // ================= TECNOLOGIA =================
+  {
+    questao: "O que é um algoritmo?",
+    respostas: [
+      {texto: "Uma sequência finita de passos para resolver um problema", correct: true},
+      {texto: "Um tipo de hardware", correct: false},
+      {texto: "Um antivírus", correct: false},
+      {texto: "Uma linguagem de programação", correct: false}
+    ]
+  },
+  {
+    questao: "Qual estrutura de dados é mais eficiente para buscas ordenadas?",
+    respostas: [
+      {texto: "Árvore binária balanceada", correct: true},
+      {texto: "Lista encadeada simples", correct: false},
+      {texto: "Pilha", correct: false},
+      {texto: "Fila", correct: false}
+    ]
+  },
+  {
+    questao: "O protocolo HTTPS é mais seguro que HTTP porque:",
+    respostas: [
+      {texto: "Utiliza criptografia TLS", correct: true},
+      {texto: "É mais rápido", correct: false},
+      {texto: "Não usa servidores", correct: false},
+      {texto: "Não usa internet", correct: false}
+    ]
+  },
+  {
+    questao: "O que caracteriza machine learning?",
+    respostas: [
+      {texto: "Aprendizado a partir de dados", correct: true},
+      {texto: "Programação manual sem dados", correct: false},
+      {texto: "Apenas robótica", correct: false},
+      {texto: "Somente hardware especializado", correct: false}
+    ]
+  },
+  {
+    questao: "O que é um banco de dados relacional?",
+    respostas: [
+      {texto: "Um sistema que organiza dados em tabelas relacionadas", correct: true},
+      {texto: "Um tipo de memória RAM", correct: false},
+      {texto: "Um processador gráfico", correct: false},
+      {texto: "Um antivírus", correct: false}
+    ]
+  },
+  {
+    questao: "O que significa API?",
+    respostas: [
+      {texto: "Interface de Programação de Aplicações", correct: true},
+      {texto: "Sistema operacional", correct: false},
+      {texto: "Linguagem de programação", correct: false},
+      {texto: "Banco de dados", correct: false}
+    ]
+  }
+];
+
+
 const categorias = {
     quimica: questoesDeQuimica,
     geografia: questoesDeGeografia,
     matematica: questoesDeMatematica,
     tecnologia: questoesDeTecnologia,
     historia: questoesDeHistoria,
-    cultura: questoesDeCulturaGeral
+    cultura: questoesDeCulturaGeral,
+    geral: todasAsQuestoes
 }
 
 
