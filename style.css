@@ -12,6 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: sans-serif;
+    padding-bottom: 50px;
 }
 
 
@@ -221,8 +222,10 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 40px;
-    width: 100%;    
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 footer p {
